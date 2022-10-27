@@ -8,12 +8,16 @@ Alternative model(Model.jpg is a visual representation of the model):
    from which classes "Animal" and "Plant" inherit 
    -> In this way, both animals and plants can be food.
 
-2. Classes Lion, Goat and Cow extend Animal class. 
+2. Classes Predator and Herbivorous extend Animal. 
+   Predator can eat other Animals and Herbivorous can eat Plants. 
+   This is implemented using generics and PECS. 
+
+3. Classes Lion, Goat and Cow extend Animal class. 
    Class Grass extends Plant class.
 
-3. "Animal" class contains void eat(Food food) method   
+4. "Animal" class contains void eat(Food food) method   
    -> so, animals can eat plants and others animals.
 
-4. Method "eat" has condition, that check if class of "this" animal equals class of the food. 
+5. Method "eat" has condition, that check if class of "this" animal equals class of the food. 
    If animal eat other animal which has the same type - we have message that it's impossible. 
    Otherwise, we have message that animal eat something food.
